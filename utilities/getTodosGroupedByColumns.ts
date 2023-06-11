@@ -5,7 +5,6 @@ export const getTodosGroupedByColumns = async () => {
     process.env.NEXT_PUBLIC_DATABASE_ID!,
     process.env.NEXT_PUBLIC_TODOS_COLLECTION_ID!
   );
-  console.log("___DATA___", data);
 
   const todos = data.documents;
 
@@ -27,8 +26,6 @@ export const getTodosGroupedByColumns = async () => {
 
     return acc;
   }, new Map<TypedColumn, Column>());
-
-  console.log("__COLUMNS__", columns);
 
   // if the column doesn't have inprogress, todo, onHold and done, add them with empty todos.
 

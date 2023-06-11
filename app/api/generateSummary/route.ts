@@ -26,8 +26,5 @@ export async function POST(req: Request) {
   });
   const { data } = response;
 
-  console.log("___DATA IS___", data);
-  console.log("___MESSAGE FROM AI___",data.choices[0].message);
-
   return NextResponse.json(data.choices[0].message);
 }
