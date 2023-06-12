@@ -52,7 +52,7 @@ export const useBoardStore = create<BoardState>((set, get) => ({
   newTaskType: "Todo",
   setNewTaskType: (columnId: TypedColumn) => set({ newTaskType: columnId }),
 
-  addTask: async (todo: string, columnId: TypedColumn, image?: File | null) => {
+  addTask: async (todo, columnId, image) => {
     let file: Image | undefined;
     if (image) {
       const fileUploaded = await uploadImage(image);
@@ -63,7 +63,7 @@ export const useBoardStore = create<BoardState>((set, get) => ({
         };
       }
     }
-    await databases.createDocument(
+    const { $id } = await databases.createDocument(
       process.env.NEXT_PUBLIC_DATABASE_ID!,
       process.env.NEXT_PUBLIC_TODOS_COLLECTION_ID!,
       ID.unique(),
@@ -76,10 +76,11 @@ export const useBoardStore = create<BoardState>((set, get) => ({
     );
 
     set({ newTaskInput: "" });
+
     set((state) => {
       const newColumns = new Map(state.board.columns);
 
-      const newTodo: Todo =  {
+      const newTodo: Todo = {
         $id,
         $createdAt: new Date().toISOString(),
         title: todo,
@@ -87,6 +88,7 @@ export const useBoardStore = create<BoardState>((set, get) => ({
         // include image if it exists
         ...(file && { image: file }),
       };
+      
       const column = newColumns.get(columnId);
 
       if (!column) {

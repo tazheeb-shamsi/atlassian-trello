@@ -9,7 +9,7 @@ interface Column {
 }
 
 interface Todo {
-  $id: TypedColumn;
+  $id: string;
   $createdAt: string;
   title: string;
   status: TypedColumn;

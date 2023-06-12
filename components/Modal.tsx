@@ -15,6 +15,16 @@ function Modal() {
     state.closeModal,
   ]);
 
+  const [addTask, image, setImage, newTaskInput, setNewtaskInput, newTaskType] =
+    useBoardStore((state) => [
+      state.addTask,
+      state.image,
+      state.setImage,
+      state.newTaskInput,
+      state.setNewTaskInput,
+      state.newTaskType,
+    ]);
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!newTaskInput) return;
@@ -25,18 +35,7 @@ function Modal() {
     closeModal();
   };
 
-  const [addTask, image, setImage, newTaskInput, setNewtaskInput,newTaskType] =
-    useBoardStore((state) => [
-      state.addTask,
-      state.image,
-      state.setImage,
-      state.newTaskInput,
-      state.setNewTaskInput,
-      state.newTaskType
-    ]);
-
   return (
-    // Use the `Transition` component at the root level
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog
         onSubmit={handleSubmit}
