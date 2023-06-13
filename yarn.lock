@@ -7,10 +7,10 @@
   resolved "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz"
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
-"@babel/runtime@^7.15.4", "@babel/runtime@^7.20.7", "@babel/runtime@^7.9.2", "@babel/runtime@>=7":
-  version "7.22.3"
-  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.22.3.tgz"
-  integrity sha512-XsDuspWKLUsxwCp6r7EhsExHtYfbe5oAGQ19kqngTdCPUoPQzOPdUbD/pB9PJiwb2ptYKQDjSJT3R6dC+EPqfQ==
+"@babel/runtime@^7.15.4", "@babel/runtime@^7.20.7", "@babel/runtime@^7.22.5", "@babel/runtime@^7.9.2", "@babel/runtime@>=7":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.22.5.tgz"
+  integrity sha512-ecjvYlnAaZ/KVneE/OdKYBYfgXV3Ptu6zQWmgEF7vwKhQnvVS6bjMD2XYgj+SNvQ1GfK/pjgokfPkC/2CO8CuA==
   dependencies:
     regenerator-runtime "^0.13.11"
 
@@ -598,10 +598,10 @@ concat-map@0.0.1:
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
 
-core-js-pure@>=3:
-  version "3.30.2"
-  resolved "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.30.2.tgz"
-  integrity sha512-p/npFUJXXBkCCTIlEGBdghofn00jWG6ZOtdoIXSJmAu2QBvN0IqpZXWweOytcwE6cfx8ZvVUy1vw8zxhe4Y2vg==
+core-js-pure@^3.31.0, core-js-pure@>=3:
+  version "3.31.0"
+  resolved "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.31.0.tgz"
+  integrity sha512-/AnE9Y4OsJZicCzIe97JP5XoPKQJfTuEG43aEVLFJGOJpyqELod+pE6LEl63DfG1Mp8wX97LDaDpy1GmLEUxlg==
 
 cross-fetch@3.1.5:
   version "3.1.5"
