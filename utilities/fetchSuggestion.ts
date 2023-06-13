@@ -1,7 +1,7 @@
-import formatTodoForAI from "./formatTodoForAi";
+import formatTodosForAI from "./formatTodosForAi";
 
 const fecthSuggestion = async (board: Board) => {
-  const todos = formatTodoForAI(board);
+  const todos = formatTodosForAI(board);
 
   const response = await fetch("api/generateSummary", {
     method: "POST",
