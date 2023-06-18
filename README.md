@@ -11,11 +11,11 @@ This is a [Atlassian Trello](https://atlassian-trello.vercel.app/) project ising
 First, run the development server:
 
 ```
-`npm run dev`
+[`npm run dev`]
 # or
-`yarn dev`
-
-`pnpm dev`
+[`yarn dev`]
+# or
+[`pnpm dev`]
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
