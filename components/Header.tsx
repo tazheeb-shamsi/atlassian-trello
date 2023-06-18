@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="flex flex-col md:flex-row items-center px-4  bg-gray-500/10">
+      <div className="flex flex-col md:flex-row items-center p-2 bg-gray-500/10">
         <div
           className="absolute left-0 top-0 w-full h-96 bg-gradient-to-br 
         from-pink-400 
