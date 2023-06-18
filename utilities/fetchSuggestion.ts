@@ -1,5 +1,6 @@
 import formatTodosForAI from "./formatTodosForAI";
 
+
 const fecthSuggestion = async (board: Board) => {
   const todos = formatTodosForAI(board);
 
