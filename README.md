@@ -1,8 +1,8 @@
 ## 🔴LIVE: [Atlassian Trello](https://atlassian-trello.vercel.app/)
 
-# or![Screenshot 2023-06-18 170443](https://github.com/tazheeb-shamsi/atlassian-trello/assets/94049470/45a403bd-a563-48f9-86fd-41de3f178df0)
+# ![Screenshot 2023-06-18 170443](https://github.com/tazheeb-shamsi/atlassian-trello/assets/94049470/45a403bd-a563-48f9-86fd-41de3f178df0)
 
-# or![Screenshot 2023-06-11 224410](https://github.com/tazheeb-shamsi/atlassian-trello/assets/94049470/4af06015-8edd-464e-aa1b-3abe1d2e410f)
+# ![Screenshot 2023-06-11 224410](https://github.com/tazheeb-shamsi/atlassian-trello/assets/94049470/4af06015-8edd-464e-aa1b-3abe1d2e410f)
 
 This is a [Atlassian Trello](https://atlassian-trello.vercel.app/) project ising `Next.Js` bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
